@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+p.Practice_2 {
+    border-style: solid;
+    border-width: medium;
+}
+</style>
+<script>
+function paragraphdesign() {
+var myTag = document.getElementById("myParagraph");
+var redBorder = document.getElementById("redBorder").value;
+var greenBorder = document.getElementById("greenBorder").value;
+var blueBorder = document.getElementById("blueBorder").value;
+var width = document.getElementById("widthBorder").value;
+
+var redBackground = document.getElementById("redBackground").value;
+var greenBackground = document.getElementById("greenBackground").value;
+var blueBackground = document.getElementById("blueBackground").value;
+
+myTag.style.borderColor = "rgb(" + redBorder + "," + greenBorder + "," + blueBorder + ")";
+myTag.style.borderWidth = width + "px";
+myTag.style.backgroundColor = "rgb(" + redBackground + "," + greenBackground + "," + blueBackground + ")";
+return 0;
+}
+
+</script>
+</head>
+<body>
+<p class="Practice_2" id="myParagraph">This is a paragraph with very important information! In order to save the world you need to zcjkbsa asdjkhf adf asdfhslakdjf asdfhasdfdsfljkahds</p>
+
+<form>
+	<table>
+	<tr>
+	<td colspan = 2>
+			Border:</td></tr>
+<tr><td>
+			Red value (Max 255): 
+</td><td>
+<input type="text" id="redBorder" name="redBorder"></input> </td></tr>
+
+<tr><td>
+			Green value (Max 255): </td><td><input type="text" id="greenBorder" name="greenBorder"></input></td></tr><tr><td>
+			Blue value (Max 255): </td><td><input type="text" id="blueBorder" name="blueBorder"></input></td></tr><tr><td>
+
+Background Color:</td></tr><tr><td>
+			Red value (Max 255):</td><td> <input type="text" id="redBackground" name="redBackground"></input></td></tr><tr><td>
+			Green value (Max 255): </td><td><input type="text" id="greenBackground" name="greenBackground"></input></td></tr><tr><td>
+			Blue value (Max 255): </td><td><input type="text" id="blueBackground" name="blueBackground"></input></td></tr><tr><td colspan = 2>
+Width Size:</td></tr><tr><td>
+            Width: </td><td><input type="text" id="widthBorder" name="widthBorder"></input></td></tr><tr><td colspan =2></td>               
+			</td></tr><tr><td></td><input type="button" onclick="paragraphdesign()" value = "submit"></button></td></tr>
+</table>
+		</form>
+
+</body>
+</html>
